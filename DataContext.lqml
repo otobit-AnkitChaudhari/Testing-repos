@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SqlAuthentication" EntityNamespace="SqlAuthenticationContext" ContextNamespace="SqlAuthenticationContext" Class="SqlAuthenticationDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="413b7bae-0ced-4131-acc5-c4cc8d5390b0" Provider="Devart.Data.SqlServer.Linq.Provider.SqlDataProvider, Devart.Data.SqlServer.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=DESKTOP-BVHJ40C;Initial Catalog=SqlAuthentication;Integrated Security=True;Persist Security Info=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LoginTable" Member="LoginTables">
+    <Type Name="LoginTable" ed:Guid="ead803f8-51f6-470a-bbe7-c65b62c68b78">
+      <Column Name="PwdId" Type="System.Int32" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Always" Precision="10" ed:ValidateRequired="true" ed:Guid="410696a5-2f0a-44ae-bb67-2bb11bfeb122" />
+      <Column Name="PwdName" Type="System.String" DbType="VARCHAR(10)" CanBeNull="true" UpdateCheck="Never" MaxLength="10" ed:ValidateMaxLength="10" ed:ValidateRequired="false" ed:Guid="69c579f0-b8fc-4722-a58c-85f8a4ad364b" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserTable" Member="UserTables">
+    <Type Name="UserTable" ed:Guid="82ebf45d-1e8f-4285-b227-126e939293ad">
+      <Column Name="UserId" Type="System.Int32" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Always" Precision="10" ed:ValidateRequired="true" ed:Guid="6795987e-3873-4103-9089-e8544da2f42f" />
+      <Column Name="UserName" Type="System.String" DbType="VARCHAR(10)" CanBeNull="true" UpdateCheck="Never" MaxLength="10" ed:ValidateMaxLength="10" ed:ValidateRequired="false" ed:Guid="fd15d439-a942-4a3c-a2ae-311338b670db" />
+    </Type>
+  </Table>
+</Database>
